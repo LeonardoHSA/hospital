@@ -7,6 +7,11 @@ public class Prontuario {
 	private Paciente paciente;
 	private Ocorrencia listaOcorrencias;
 	
+	public Prontuario(int idProntuario) {
+		
+		this.idPronturio = idProntuario;
+	}
+	
 	
 	public int getIdPronturio() {
 		return idPronturio;
