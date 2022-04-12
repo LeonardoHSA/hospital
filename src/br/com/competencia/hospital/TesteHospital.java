@@ -6,7 +6,7 @@ public class TesteHospital {
 
 	
 
-	private static ArrayList<Ocorrencia> lista;
+	
 
 	public static void main(String[] args) {
 		
@@ -26,7 +26,7 @@ public class TesteHospital {
 		listaMedicos.add(m = new Medico("Vitória", "41.698.520-8", "478.528.698.-89", 
 		"Rua Tanto faz, 524", "(11) 98746-8941", "Ortopedista", "10235478-8/BR", 1));
 		
-		listaOcorrencias.add(o = new Ocorrencia("Exame de loucura", "nada", "nada", "nada", "SUS"));
+		listaOcorrencias.add(o = new Ocorrencia("Exame de loucura", "Foi tensa", "Muito tarja preta por favor", "Dias de loucura e psicopatia", "SUS"));
 		
 		listaProntuarios.add(pro = new Prontuario(1, listaMedicos.get(0), listaPacientes.get(0), listaOcorrencias.get(0)));
 		
