@@ -1,5 +1,7 @@
 package br.com.competencia.hospital;
 
+
+
 public class Prontuario {
 	
 	private int idPronturio;
@@ -7,9 +9,14 @@ public class Prontuario {
 	private Paciente paciente;
 	private Ocorrencia listaOcorrencias;
 	
-	public Prontuario(int idProntuario) {
+	
+	public Prontuario(int idProntuario, Medico medResponsavel, Paciente paciente, Ocorrencia listaOcorrencias) {
 		
 		this.idPronturio = idProntuario;
+		this.medResponsavel = medResponsavel;
+		this.paciente = paciente;
+		this.listaOcorrencias = listaOcorrencias;
+		
 	}
 	
 	
@@ -31,10 +38,26 @@ public class Prontuario {
 	public void setPaciente(Paciente paciente) {
 		this.paciente = paciente;
 	}
+
 	public Ocorrencia getListaOcorrencias() {
 		return listaOcorrencias;
 	}
+
+
 	public void setListaOcorrencias(Ocorrencia listaOcorrencias) {
 		this.listaOcorrencias = listaOcorrencias;
 	}
+
+	
+	public void status() {
+		
+		System.out.println("ID Prontuario: " + this.getIdPronturio());
+		System.out.println("Médico responsável: " + this.getMedResponsavel().getNome());
+		System.out.println("Paciente: " + this.getPaciente().getNome());
+		
+	}
+
+
+	
+	
 }

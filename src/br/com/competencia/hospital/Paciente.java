@@ -13,7 +13,7 @@ public class Paciente extends Pessoa {
 		this.setEndereco(endereco);
 		this.setTelefone(telefone);
 		
-		Prontuario pron = new Prontuario(idProntuario);
+		
 	}
 	
 
@@ -23,5 +23,16 @@ public class Paciente extends Pessoa {
 
 	public void setIdPaciente(int idPaciente) {
 		this.idPaciente = idPaciente;
+	}
+	
+	public void status() {
+		
+		System.out.println("ID Paciente: " + this.getIdPaciente());
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("RG: " + this.getRg());
+		System.out.println("CPF: " + this.getCpf());
+		System.out.println("Endereço: " + this.getEndereco());
+		System.out.println("Telefone: " + this.getTelefone());
+		
 	}
 }
